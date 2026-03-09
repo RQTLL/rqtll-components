@@ -356,3 +356,11 @@ QWidget[role="in-tab"][variant="default"] QWidget[role="node-list"][variant="def
   background: #121212;
   border-radius: 6px;
 }
+
+
+QMessageBox {
+  background: #2e2e2e;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+}
