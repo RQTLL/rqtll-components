@@ -359,7 +359,7 @@ QWidget[role="in-tab"][variant="default"] QWidget[role="node-list"][variant="def
 
 
 QMessageBox {
-  background: "#121212",
+  background-color: "#121212",
   color: #ffffff;
   border-radius: 12px;
   padding: 8px;
