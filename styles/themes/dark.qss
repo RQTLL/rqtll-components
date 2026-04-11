@@ -352,11 +352,15 @@ QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:pressed
   background-color: #ffffff;
 }
 
-QWidget[role="in-tab"][variant="default"] QWidget[role="node-list"][variant="default"] {
-  background: #121212;
-  border-radius: 6px;
+QWidget[role="node-list"][variant="default"],
+QWidget[role="node-list"][variant="default"] QWidget {
+  margin: 0;
 }
 
+QWidget[role="node-scroll"][variant="default"] QLabel {
+  padding-left: 5px;
+  border-left: 4px solid #3d3d3d;
+}
 
 QMessageBox {
   background-color: #121212;
