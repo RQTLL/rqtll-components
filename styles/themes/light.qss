@@ -150,12 +150,42 @@ QPushButton:disabled {
   border-color: #c8c8c8;
 }
 
-QLineEdit, QTextEdit, QPlainTextEdit {
+QLineEdit, QTextEdit, QPlainTextEdit, QSpinBox, QDoubleSpinBox {
   background: #e6e6e6;
   border: 2px solid #e6e6e9;
   border-radius: 6px;
   padding: 4px;
   color: #000000;
+}
+
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button
+{
+  background-color: #0090ff;
+  border: none;
+  padding: 2px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-right: 2px;
+  border-radius: 4px;
+}
+
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover
+{
+  background-color: #0080df;
+}
+
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed
+{
+  background-color: #ffffff;
 }
 
 
@@ -216,6 +246,7 @@ QWidget[role="in-tab"][variant="default"] QWidget {
 }
 
 QWidget[role="in-tab"][variant="default"] QLineEdit,
+QWidget[role="in-tab"][variant="default"] QSpinBox,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox,
 QWidget[role="in-tab"][variant="default"] QComboBox {
   padding: 4px;
@@ -309,6 +340,8 @@ QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView::item:sele
   color: #000000;
 }
 
+QWidget[role="in-tab"][variant="default"] QSpinBox::up-button,
+QWidget[role="in-tab"][variant="default"] QSpinBox::down-button,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button 
 {
@@ -334,6 +367,8 @@ QWidget[role="in-tab"][variant="default"] QComboBox::down-arrow {
 }
 
 QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:hover,
+QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:hover,
+QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:hover,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:hover,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:hover
 {
@@ -341,6 +376,8 @@ QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:hover
 }
 
 QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:pressed,
+QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:pressed,
+QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:pressed,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:pressed,
 QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:pressed
 {
