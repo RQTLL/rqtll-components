@@ -143,6 +143,11 @@ QPushButton:pressed
   color: #000000;
 }
 
+QFrame[role="frame-button"][variant="default"][state="checked"] {
+  background: #0090ff;
+  border: 2px solid #0090ff;
+}
+
 QFrame[role="frame-button"][variant="default"][state="disabled"],
 QPushButton:disabled 
 {
