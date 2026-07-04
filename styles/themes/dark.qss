@@ -62,7 +62,7 @@
 
 #MainContainer[state="normal"] {
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 10%);
+  border: 1px solid rgba(255, 255, 255, 6%);
 }
 
 #MainContainer[state="maximized"] {
@@ -88,7 +88,7 @@ QWidget {
 QPushButton[role="close"][variant="default"] {
   background: #2e2e2e; 
   color: #ffffff;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #2a2a2a;
   border-radius: 6px;
   padding: 8px;
 }
@@ -112,7 +112,7 @@ QPushButton[role="close"][variant="default"]:disabled {
 QPushButton {
   background: #2e2e2e;
   color: #ffffff;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #2a2a2a;
   border-radius: 6px;
   padding: 8px;
 }
@@ -124,9 +124,14 @@ QFrame[role="frame-button"][variant="default"] * {
 QFrame[role="frame-button"][variant="default"] {
   background: #2e2e2e;
   color: #ffffff;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #2a2a2a;
   border-radius: 14px;
   padding: 6px;
+}
+
+QWidget[role="in-tab"][variant="default"] QFrame[role="frame-button"][variant="default"] {
+  background: #2e2e2e;
+  border: 1px solid #2a2a2a;
 }
 
 QFrame[role="frame-button"][variant="default"]:hover,
@@ -134,6 +139,11 @@ QPushButton:hover
 {
   background: #3d3d3d;
   border: 2px solid #0090ff; 
+}
+
+QWidget[role="in-tab"][variant="default"] QFrame[role="frame-button"][variant="default"]:hover {
+  background: #3d3d3d;
+  border: 2px solid #0090ff;
 }
 
 QFrame[role="frame-button"][variant="default"][state="pressed"],
@@ -144,6 +154,11 @@ QPushButton:pressed
 }
 
 QFrame[role="frame-button"][variant="default"][state="checked"] {
+  background: #0090ff;
+  border: 2px solid #0090ff;
+}
+
+QWidget[role="in-tab"][variant="default"] QFrame[role="frame-button"][variant="default"][state="checked"] {
   background: #0090ff;
   border: 2px solid #0090ff;
 }
@@ -163,7 +178,7 @@ QSpinBox,
 QDoubleSpinBox
 {
   background: #1e1e1e; 
-  border: 1px solid #3d3d3d;
+  border: 1px solid #222222;
   border-radius: 6px;
   padding: 4px;
   color: #ffffff;
@@ -246,7 +261,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 QWidget[role="in-tab"][variant="default"] {
   background: #1e1e1e;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #222222;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -281,7 +296,7 @@ QGroupBox {
   padding-bottom: 2px;
   color: #ffffff;
   border-radius: 8px;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #222222;
 }
 
 QTabBar::tab {
@@ -299,7 +314,7 @@ QTabBar::tab:selected {
 QTabBar::tab:!selected {
   background: #2e2e2e;
   color: #dcdcdc;
-  border: 1px solid #3d3d3d;
+  border: 1px solid #2a2a2a;
   border-bottom: none;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -310,7 +325,7 @@ QTableView {
   border-radius: 6px;
   padding: 4px;
   color: #ffffff;
-  gridline-color: #3d3d3d;
+  gridline-color: #222222;
 }
 
 QTableView * {
@@ -403,12 +418,12 @@ QWidget[role="node-list"][variant="default"] QWidget {
 
 QWidget[role="node-scroll"][variant="default"] QLabel {
   padding-left: 5px;
-  border-left: 4px solid #3d3d3d;
+  border-left: 4px solid #2a2a2a;
 }
 
 QMessageBox {
   background-color: #121212;
   color: #ffffff;
   padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 10%);
+  border: 1px solid rgba(255, 255, 255, 6%);
 }
