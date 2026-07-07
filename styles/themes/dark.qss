@@ -427,3 +427,58 @@ QMessageBox {
   padding: 8px;
   border: 1px solid rgba(255, 255, 255, 6%);
 }
+
+/* Status bar */
+QFrame[role="status-bar"] {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+QFrame[role="status-bar"] QLabel {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+QFrame[role="central"] {
+  background: #000000;
+  border-radius: 12px;
+  margin: 4px 8px 0 4px;
+}
+
+QFrame[role="central"] * {
+  background: #00000000;
+  border: none;
+}
+
+QFrame[role="central"] QTabWidget::pane {
+  border: 1px solid #222222;
+  border-radius: 8px;
+}
+
+QFrame[role="central"] QTabBar {
+  background: #000000;
+}
+
+QFrame[role="central"] QTabBar::tab:!selected {
+  background: #000000;
+}
+
+QFrame[role="central"] QTreeWidget {
+  padding-left: 4px;
+  border: none;
+  qproperty-indentation: 16px;
+  qproperty-rootIsDecorated: false;
+}
+
+/* Completely remove branch indicators and space */
+QFrame[role="central"] QTreeView::branch {
+  width: 0px;
+  border-image: none;
+  image: none;
+}
+
+QTextEdit {
+  font-family: 'UbuntuMono Nerd Font Mono', 'Ubuntu Mono', monospace;
+}

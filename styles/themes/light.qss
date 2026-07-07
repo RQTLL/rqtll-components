@@ -417,3 +417,22 @@ QMessageBox {
   border: 1px solid rgba(0, 0, 0, 8%);
 }
 
+QFrame[role="central"] QTreeWidget {
+  padding-left: 4px;
+  border: none;
+  qproperty-indentation: 0;
+  qproperty-rootIsDecorated: false;
+}
+
+/* Completely remove branch indicators and space */
+QFrame[role="central"] QTreeView::branch {
+  width: 0px;
+  border-image: none;
+  image: none;
+}
+
+QTextEdit {
+  font-family: 'UbuntuMono Nerd Font Mono', 'Ubuntu Mono', monospace;
+  font-size: 14pt;
+}
+
