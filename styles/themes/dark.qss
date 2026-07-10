@@ -482,3 +482,12 @@ QFrame[role="central"] QTreeView::branch {
 QTextEdit {
   font-family: 'UbuntuMono Nerd Font Mono', 'Ubuntu Mono', monospace;
 }
+
+QLabel[role="info_label"][variant="default"][state="normal"] {
+  font-size: 10pt;
+}
+
+QFrame[frameShape="4"],
+QFrame[frameShape="5"] {
+  background-color: #222222;
+}
