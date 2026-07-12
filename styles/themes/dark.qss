@@ -272,9 +272,9 @@ QWidget[role="in-tab"][variant="default"] QWidget {
 }
 
 QWidget[role="in-tab"][variant="default"] QLineEdit,
-QWidget[role="in-tab"][variant="default"] QSpinBox,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox,
-QWidget[role="in-tab"][variant="default"] QComboBox 
+QSpinBox,
+QDoubleSpinBox,
+QComboBox 
 {
   padding: 4px;
   border-radius: 6px;
@@ -343,33 +343,33 @@ QComboBox {
   combobox-popup: 0;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox * {
+QComboBox * {
   background: #121212;
   color: #ffffff;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox:on {
+QComboBox:on {
   background: #121212;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView {
+QComboBox QAbstractItemView {
   background-color: #121212;
   border: 1px solid #0090ff; 
   selection-background-color: #0090ff; 
   outline: none; 
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView::item:hover,
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView::item:selected 
+QComboBox QAbstractItemView::item:hover,
+QComboBox QAbstractItemView::item:selected 
 {
   background-color: #0090ff;
   color: #000000;
 }
 
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button
 {
   background-color: #0090ff;
   border: none;
@@ -380,7 +380,7 @@ QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button
   border-radius: 4px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down {
+QComboBox::drop-down {
   background: #0090ff;
   border: none;
   border-radius: 4px;
@@ -389,24 +389,24 @@ QWidget[role="in-tab"][variant="default"] QComboBox::drop-down {
   width: 16px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::down-arrow {
+QComboBox::down-arrow {
   width: 12px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:hover,
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:hover,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:hover,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:hover,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:hover
+QComboBox::drop-down:hover,
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover
 {
   background-color: #10a0ff;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:pressed,
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:pressed,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:pressed,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:pressed,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:pressed
+QComboBox::drop-down:pressed,
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed
 {
   background-color: #ffffff;
 }
@@ -442,7 +442,7 @@ QFrame[role="status-bar"] QLabel {
 }
 
 QFrame[role="central"] {
-  background: #000000;
+  background: #00000000;
   border-radius: 12px;
   margin: 4px 8px 0 4px;
 }
@@ -452,17 +452,25 @@ QFrame[role="central"] * {
   border: none;
 }
 
+QFrame[role="central"] QTextEdit {
+  background: #1e1e1e; 
+  border: 1px solid #222222;
+  border-radius: 6px;
+  padding: 4px;
+  color: #ffffff;
+}
+
 QFrame[role="central"] QTabWidget::pane {
   border: 1px solid #222222;
   border-radius: 8px;
 }
 
 QFrame[role="central"] QTabBar {
-  background: #000000;
+  background: #00000000;
 }
 
 QFrame[role="central"] QTabBar::tab:!selected {
-  background: #000000;
+  background: #00000000;
 }
 
 QFrame[role="central"] QTreeWidget {
@@ -481,10 +489,6 @@ QFrame[role="central"] QTreeView::branch {
 
 QTextEdit {
   font-family: 'UbuntuMono Nerd Font Mono', 'Ubuntu Mono', monospace;
-}
-
-QLabel[role="info_label"][variant="default"][state="normal"] {
-  font-size: 10pt;
 }
 
 QFrame[frameShape="4"],
