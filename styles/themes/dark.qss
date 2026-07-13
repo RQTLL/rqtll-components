@@ -498,3 +498,33 @@ QFrame[frameShape="4"],
 QFrame[frameShape="5"] {
   background-color: #222222;
 }
+
+/*RADIO BUTTONS AND CHECKBOXES borders #0090ff*/
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+  border: 2px solid #0090ff;
+}
+
+QRadioButton::indicator:checked {
+  background: #0090ff;
+}
+
+QRadioButton::indicator:unchecked {
+  background: transparent;
+}
+
+QCheckBox::indicator {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #0090ff;
+}
+
+QCheckBox::indicator:checked {
+  background: #0090ff;
+}
+
+QCheckBox::indicator:unchecked {
+  background: transparent;
+}
