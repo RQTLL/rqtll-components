@@ -189,7 +189,7 @@ QSpinBox::down-button,
 QDoubleSpinBox::up-button,
 QDoubleSpinBox::down-button
 {
-  background-color: #0090ff;
+  background-color: #1e1e1e;
   border: none;
   padding: 2px;
   margin-top: 1px;
@@ -203,7 +203,7 @@ QSpinBox::down-button:hover,
 QDoubleSpinBox::up-button:hover,
 QDoubleSpinBox::down-button:hover
 {
-  background-color: #10a0ff;
+  background-color: #000000;
 }
 
 QSpinBox::up-button:pressed,
@@ -341,6 +341,9 @@ QTableView QHeaderView::section {
 
 QComboBox {
   combobox-popup: 0;
+  background: #121212;
+  border: 1px solid #1e1e1e;
+  border-radius: 6px;
 }
 
 QComboBox * {
@@ -371,7 +374,7 @@ QSpinBox::down-button,
 QDoubleSpinBox::up-button,
 QDoubleSpinBox::down-button
 {
-  background-color: #0090ff;
+  background-color: #1e1e1e;
   border: none;
   padding: 2px;
   margin-top: 1px;
@@ -381,7 +384,7 @@ QDoubleSpinBox::down-button
 }
 
 QComboBox::drop-down {
-  background: #0090ff;
+  background: #1e1e1e;
   border: none;
   border-radius: 4px;
   margin: 4px;
@@ -399,7 +402,7 @@ QSpinBox::down-button:hover,
 QDoubleSpinBox::up-button:hover,
 QDoubleSpinBox::down-button:hover
 {
-  background-color: #10a0ff;
+  background-color: #000000;
 }
 
 QComboBox::drop-down:pressed,
