@@ -336,35 +336,38 @@ QTableView::item {
 
 QComboBox {
   combobox-popup: 0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox * {
+QComboBox * {
   background: #ffffff;
   color: #000000;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox:on {
+QComboBox:on {
   background: #ffffff;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView {
+QComboBox QAbstractItemView {
   background-color: #ffffff;
-  border: 2px solid #0090ff;
-  selection-background-color: #0078d7; 
+  border: 1px solid #0090ff; 
+  selection-background-color: #0090ff; 
   outline: none; 
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView::item:hover,
-QWidget[role="in-tab"][variant="default"] QComboBox QAbstractItemView::item:selected 
+QComboBox QAbstractItemView::item:hover,
+QComboBox QAbstractItemView::item:selected 
 {
   background-color: #0090ff;
   color: #000000;
 }
 
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button 
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button
 {
   background-color: #0090ff;
   border: none;
@@ -375,39 +378,47 @@ QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button
   border-radius: 4px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down {
-  background-color: #0090ff;
+QComboBox::drop-down {
+  background: #0090ff;
+  border: none;
   border-radius: 4px;
   margin: 4px;
   padding: 2px;
   width: 16px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::down-arrow {
+QComboBox::down-arrow {
   width: 12px;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:hover,
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:hover,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:hover,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:hover,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:hover
+QComboBox::drop-down:hover,
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover,
+QDoubleSpinBox::down-button:hover
 {
   background-color: #0080df;
 }
 
-QWidget[role="in-tab"][variant="default"] QComboBox::drop-down:pressed,
-QWidget[role="in-tab"][variant="default"] QSpinBox::up-button:pressed,
-QWidget[role="in-tab"][variant="default"] QSpinBox::down-button:pressed,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::up-button:pressed,
-QWidget[role="in-tab"][variant="default"] QDoubleSpinBox::down-button:pressed
+QComboBox::drop-down:pressed,
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::up-button:pressed,
+QDoubleSpinBox::down-button:pressed
 {
   background-color: #ffffff;
 }
 
-QWidget[role="in-tab"][variant="default"] QWidget[role="node-list"][variant="default"] {
+QWidget[role="node-list"][variant="default"],
+QWidget[role="node-list"][variant="default"] QWidget {
   background: #ffffff;
   border-radius: 6px;
+  margin: 0;
+}
+
+QWidget[role="node-scroll"][variant="default"] QLabel {
+  padding-left: 5px;
+  border-left: 4px solid #e0e0e0;
 }
 
 QMessageBox {
@@ -426,10 +437,23 @@ QFrame[role="status-bar"][variant="default"][state="normal"] {
   padding: 0px;
 }
 
+QFrame[role="central"] QTabWidget::pane {
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+}
+
+QFrame[role="central"] QTabBar {
+  background: #00000000;
+}
+
+QFrame[role="central"] QTabBar::tab:!selected {
+  background: #00000000;
+}
+
 QFrame[role="central"] QTreeWidget {
   padding-left: 4px;
   border: none;
-  qproperty-indentation: 0;
+  qproperty-indentation: 16px;
   qproperty-rootIsDecorated: false;
 }
 
@@ -442,7 +466,6 @@ QFrame[role="central"] QTreeView::branch {
 
 QTextEdit {
   font-family: 'UbuntuMono Nerd Font Mono', 'Ubuntu Mono', monospace;
-  font-size: 14pt;
 }
 
 QLabel[role="info_label"][variant="default"][state="normal"] {
@@ -452,4 +475,34 @@ QLabel[role="info_label"][variant="default"][state="normal"] {
 QFrame[frameShape="4"],
 QFrame[frameShape="5"] {
   background-color: #d5d5d5;
+}
+
+/*RADIO BUTTONS AND CHECKBOXES borders #0090ff*/
+QRadioButton::indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+  border: 2px solid #0090ff;
+}
+
+QRadioButton::indicator:checked {
+  background: #0090ff;
+}
+
+QRadioButton::indicator:unchecked {
+  background: transparent;
+}
+
+QCheckBox::indicator {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #0090ff;
+}
+
+QCheckBox::indicator:checked {
+  background: #0090ff;
+}
+
+QCheckBox::indicator:unchecked {
+  background: transparent;
 }
