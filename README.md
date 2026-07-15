@@ -1,12 +1,12 @@
-# rqt2-components
+# rqtll-components
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/RQT2/rqt2-components/blob/main/assets/branding/logo-main-light.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/RQT2/rqt2-components/blob/main/assets/branding/logo-main-dark.svg">
-  <img alt="RQT2 Logo" src="https://github.com/RQT2/rqt2-components/blob/main/assets/branding/logo-main-color.svg" width="50px">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/branding/logo-main-light.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/branding/logo-main-dark.svg">
+  <img alt="RQTLL Logo" src="./assets/branding/logo-main-color.svg" width="50px">
 </picture>
 
-Sistema de diseño y librería de recursos visuales para **[RQT2](https://github.com/RQT2)**.
+Sistema de diseño y librería de recursos visuales para **[RQTLL](https://github.com/RQTLL)**.
 
 > [!CAUTION]
 > Este es un repositorio núcleo. Cualquier cambio en la paleta o iconos se propagará a todos los módulos que lo consumen.
@@ -28,7 +28,7 @@ Este repositorio está diseñado para ser consumido como un **Git Submodule**. E
 ### Añadir a un módulo nuevo
 ```bash
 # Usa la carpeta external/ para recursos compartidos
-git submodule add https://github.com/RQT2/rqt2-components.git external/rqt2-components
+git submodule add https://github.com/RQTLL/rqtll-components.git external/rqtll-components
 git submodule update --init --recursive
 
 ```
@@ -60,9 +60,9 @@ git submodule update --remote --merge
 
 Para mantener la agilidad del repositorio, la documentación detallada se ha segmentado:
 
-* **Catálogo de Iconos ([ICONS.md](https://github.com/RQT2/rqt2-docs/tree/main/github/components/ICONS.md))**: Tabla completa de iconos, comandos asociados y sus roles.
-* **Identidad de Marca ([BRANDING.md)](https://github.com/RQT2/rqt2-docs/tree/main/github/components/BRANDING.md))**: Guía de uso del isotipo, márgenes de seguridad para iconos y exportación.
-* **Paleta Detallada ([PALETTE.md)](https://github.com/RQT2/rqt2-docs/tree/main/github/components/PALETTE.md))**: Muestrario completo de colores para temas Claro y Oscuro.
+* **Catálogo de Iconos ([ICONS.md](https://github.com/RQTLL/rqtll-docs/tree/main/github/components/ICONS.md))**: Tabla completa de iconos, comandos asociados y sus roles.
+* **Identidad de Marca ([BRANDING.md)](https://github.com/RQTLL/rqtll-docs/tree/main/github/components/BRANDING.md))**: Guía de uso del isotipo, márgenes de seguridad para iconos y exportación.
+* **Paleta Detallada ([PALETTE.md)](https://github.com/RQTLL/rqtll-docs/tree/main/github/components/PALETTE.md))**: Muestrario completo de colores para temas Claro y Oscuro.
 
 ## Tipografía
 
@@ -83,7 +83,7 @@ Los estilos siguen un formato **Flat Modern Minimalist** con bordes redondeados 
 from PySide6.QtWidgets import QApplication
 
 def load_theme(app, theme_name="dark"):
-    with open(f"external/rqt2-components/styles/themes/{theme_name}.qss", "r") as f:
+    with open(f"external/rqtll-components/styles/themes/{theme_name}.qss", "r") as f:
         app.setStyleSheet(f.read())
 
 ```
