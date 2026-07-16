@@ -1,6 +1,6 @@
-# Contribuyendo a rqt2-components
+# Contribuyendo a rqtll-components
 
-¡Gracias por ayudar a construir la identidad visual de RQT2! Este repositorio es el corazón estético del proyecto. Para mantener la coherencia y el rendimiento, sigue estos pasos.
+¡Gracias por ayudar a construir la identidad visual de RQTLL! Este repositorio es el corazón estético del proyecto. Para mantener la coherencia y el rendimiento, sigue estos pasos.
 
 ## Ciclo de Contribución
 
@@ -25,7 +25,7 @@ Para asegurar que los iconos se rendericen correctamente en PySide6 y escalen si
 ## Cómo añadir un nuevo Icono
 
 Si vas a añadir un icono:
-1. MOdifica el archivo de GIMP [window-buttons](https://github.com/RQT2/rqt2-components/tree/main/assets/icons/window-buttons.xcf):
+1. MOdifica el archivo de GIMP [window-buttons](https://github.com/RQTLL/rqtll-components/tree/main/assets/icons/window-buttons.xcf):
    1. Crea una nueva carpeta con el nombre del icono.
    2. Agrega las capas necesarias para las variantes del icono **default**, **hover** y **active**/**click**.
    3. Exporta las variantes del icono como archivos SVG.
@@ -53,4 +53,4 @@ Antes de hacer el commit, verifica:
 ---
 
 ## Comunicación
-Si tienes dudas sobre el estilo, contacta con los mantenedores a través de las discusiones del repositorio principal [.github](https://github.com/RQT2/.github/).
+Si tienes dudas sobre el estilo, contacta con los mantenedores a través de las discusiones del repositorio principal [.github](https://github.com/RQTLL/.github/).

@@ -1,11 +1,11 @@
 {
-  "project": "RQT2",
+  "project": "RQTLL",
   "themes": {
     "light": {
       "background": "#ffffff",
       "color": "#000000",
       "disabled-bg": "#d9d9d9",
-	  "disabled-color": "#222222",
+      "disabled-color": "#222222",
       "accent": "#0090ff",
       "success": "#068989",
       "warning": "#e5a436",
@@ -20,8 +20,8 @@
     "dark": {
       "background": "#121212",
       "color": "#ffffff",
-	  "disabled-bg": "#2e2e2e",
-	  "disabled-color": "#dcdcdc",
+      "disabled-bg": "#2e2e2e",
+      "disabled-color": "#dcdcdc",
       "accent": "#0090ff",
       "success": "#3fe1b0",
       "warning": "#ffbd4f",
