@@ -446,6 +446,11 @@ QFrame[role="central"] QTabBar {
   background: #00000000;
 }
 
+QFrame[role="central-shortcuts"] QTabBar::tab {
+  margin: 4px 4px 0px 0px;
+  border-radius: 4px;
+}
+
 QFrame[role="central"] QTabBar::tab:!selected {
   background: #00000000;
 }
